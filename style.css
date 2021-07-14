@@ -1,0 +1,259 @@
+/* -----------google fonts style ---------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e9e2e2;
+    font-family: 'Poppins', sans-serif;
+}
+/* ----------header ------------*/
+
+header{
+    background: #2D25A0;
+}
+header:hover .bannar-img {
+    transform: scale(1.2);
+     transition:transform width 5s, height 5s;
+}
+.top-menu{
+    width: 1440px;
+    height: 677px;
+    margin: 0 auto;
+}
+.header-menu{
+    padding: 30px 0px; 
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
+}
+
+.left-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+.btn {
+    padding: 8px 20px;
+    background-color: #E02C6D;
+    color: #fff;
+    border: none;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: aqua;
+    color: black;
+}
+.login{
+    margin-left: 10px;
+}
+
+/*-------- bannar style---------- */
+.full-bannar{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.bannar-img img{
+    width:556px;
+    height: 438px;
+}
+.bannar-content h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+.watch{
+    margin-right: 8px;
+}
+
+/* -----all-players style ----*/
+
+.all-players{
+    margin: 30px;
+}
+.players{
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    Width:1050px;
+    margin: 0 auto; 
+
+
+    
+}
+.player{
+    background: #fff;
+    width:330px ;
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px -2px black;
+}
+.player img{
+    width: 100%;
+} 
+.player h2 {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 12px 0px;
+}
+
+.player p {
+    font-size: 18px;
+    padding: 15px 0px;
+}
+/* ---------player blog------------ */
+.player-blog{
+    
+}
+#full-blog{
+    width: 1150px;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+#bannar-text p{
+    width: 500px;
+    margin-bottom: 30px;
+}
+#heading{
+    color: black;
+    font-size: 50px;
+}
+
+/* footer */
+footer{
+  
+}
+.footer-img{
+    display: flex;
+    justify-content: center;
+    clear: both;
+}
+.footer-img img{
+    Width:484px;
+    Height:213px:
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+   
+}
+.icon i{
+    padding: 10px 10px;
+    background: #c5c1c1;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.icon i:hover{
+    background: gray;
+    color: black;
+}
+.last-content{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.design{
+    color: red;
+    font-weight: bold;
+}
+/* 0-------------------------
+---------------------media query ----------------------------------*/
+/* --------mobile responsive -------*/
+@media screen and (max-width: 688px) {
+    .top-menu{
+        height: 800px;
+        padding: 20px 0px;
+    }
+
+    .top-menu,.player-blog{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .full-bannar .bannar-img img{
+        width: 450px;
+        height: 300px;
+    }
+    
+    .full-bannar{
+        flex-direction: column;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    .player{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    #full-blog{
+        width: 100%;
+    }
+    #full-blog .bannar-img img{
+       margin-top: 40px;
+
+    }
+     footer{
+       width: 400px;
+       margin: 0 auto;
+    }
+}
+ 
+/* ----------------ipad responsive ------------*/
+@media screen and (min-width: 688px) and (max-width:992px) {
+    .top-menu{
+        height: 800px;
+        padding: 20px 0px;
+    }
+
+    .top-menu,.player-blog{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .full-bannar .bannar-img img{
+        width: 450px;
+        height: 300px;
+    }
+    
+    .full-bannar{
+        flex-direction: column;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+    .player{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    #full-blog{
+        width: 100%;
+    }
+    #full-blog .bannar-img img{
+       margin-top: 40px;
+
+    }
+     footer{
+       width: 400px;
+       margin: 0 auto;
+    }
+}
+ 
